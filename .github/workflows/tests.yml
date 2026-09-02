@@ -19,4 +19,4 @@ jobs:
       - name: Setup Node
         uses: Yandex-Practicum/test-project-action@v1
         with: '20.x'
-          project: 'posmotri-v-okno-fd'
+          project: 'posmotri_v_okno_hw_smolin'
