@@ -3,7 +3,7 @@ name: Tests
 on:
   push:
     branches:
-      - '**'
+      - main
     tags:
       - '**'
 
@@ -16,7 +16,7 @@ jobs:
       - name: Check if the repository is private
         run: exit 1
         if: ${{ github.event.repository.private }}
-      - name: Tests
+      - name: Setup Node
         uses: Yandex-Practicum/test-project-action@v1
-        with:
+        with: '20.x'
           project: 'posmotri-v-okno-fd'
