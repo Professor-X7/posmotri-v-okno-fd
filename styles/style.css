@@ -165,7 +165,7 @@ ol {
   margin-block-end: 16px;
 }
 
-.result_video {
+.result__video {
   object-fit: cover;
   object-position: center;
   block-size: 100%;
@@ -177,11 +177,11 @@ ol {
   gap: 40px;
 }
 
-.search-form_fieldset {
+.search-form__fieldset {
   border: none;
 }
 
-.search-form_fieldset-title {
+.search-form__fieldset-title {
   color: #ffffff;
   font-weight: 400;
   font-size: 18px;
@@ -190,7 +190,7 @@ ol {
   margin-block-end: 5px;
 }
 
-.search-form_label {
+.search-form__label {
   display: flex;
   gap: 5px;
   align-items: center;
@@ -206,7 +206,7 @@ ol {
   white-space: nowrap;
 }
 
-.search-form_textfield {
+.search-form__textfield {
   border-inline: none;
   border-block: 1px solid currentColor;
   padding: 1px 0;
@@ -216,7 +216,7 @@ ol {
   appearance: none;
 }
 
-.search-form_textfield::placeholder {
+.search-form__textfield::placeholder {
   opacity: 0.7;
   color: inherit;
   font-weight: 400;
@@ -224,16 +224,16 @@ ol {
   line-height: 21.6px;
 }
 
-.seaarch-form_checkbox-list {
+.seaarch-form__checkbox-list {
   display: flex;
   gap: 15px;
 }
 
-.search-form_checkbox {
+.search-form__checkbox {
   appearance: none;
 }
 
-.search-form_checkbox+.search-form_pseudo-checkbox {
+.search-form__checkbox+.search-form_pseudo-checkbox {
   inline-size: 19px;
   block-size: 19px;
   border: 1px solid currentColor;
@@ -241,16 +241,16 @@ ol {
   cursor: pointer;
 }
 
-.search-form_checkbox:checked+.search-form_pseudo-checkbox::before {
-     background-color: #ffffff;
-    inline-size: 15px;
-    block-size: 15px;
-    content: "";
-    display: block;
-    margin: 1px;
+.search-form__checkbox:checked+.search-form_pseudo-checkbox::before {
+  background-color: #ffffff;
+  inline-size: 15px;
+  block-size: 15px;
+  content: "";
+  display: block;
+  margin: 1px;
 }
 
-.search-form_label-text {
+.search-form__label-text {
   font-weight: 400;
 }
 
@@ -268,11 +268,11 @@ button {
   font-family: inherit;
 }
 
-.search-form_submit-button {
+.search-form__submit-button {
   align-self: flex-end;
 }
 
-.content_detals {
+.content__detals {
   block-size: 100%;
   inline-size: 100%;
 }
@@ -287,45 +287,45 @@ button {
   text-transform: uppercase;
 }
 
-.content_accent {
+.content__accent {
   color: #545050;
 }
 
-.content_list {
+.content__list {
   position: relative;
   block-size: 298px;
   overflow: auto;
 }
 
-.content_list-item {
+.content__list-item {
   margin: 2px 2px 0px 2px;
 }
 
-.content_card-link {
+.content__card-link {
   color: #ffffff;
   text-decoration: none;
   display: block;
 }
 
-.content_card-link_current {
+.content__card-link_current {
   background-color: #545050;
 }
 
-.content_video-card {
+.content__video-card {
   display: flex;
   align-items: flex-start;
 }
 
-.content_list-item:not(:last-child) {
+.content__list-item:not(:last-child) {
   margin-block-end: 34px;
 }
 
-.content_video-card-description-container {
+.content__video-card-description-container {
   flex: 1;
   padding: 3px 0 0 2px;
 }
 
-.content_video-card-title {
+.content__video-card-title {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -338,13 +338,13 @@ button {
   max-width: 192px;
 }
 
-.content_video-card-decription {
+.content__video-card-decription {
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
 }
 
-.content_video-card-thumbnall {
+.content__video-card-thumbnall {
   display: block;
   inline-size: 194px;
   block-size: 103px;
@@ -362,7 +362,7 @@ button {
   text-decoration: underline;
 }
 
-.content_card-link:hover {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
@@ -370,7 +370,7 @@ button {
   text-decoration: underline;
 }
 
-.search-form_textfield:active {
+.search-form__textfield:active {
   border-inline: 1px solid currentColor;
 }
 
@@ -378,7 +378,7 @@ button {
   background: #545050;
 }
 
-.content_card-link:active {
+.content__card-link:active {
   background: #545050;
 }
 
@@ -386,7 +386,7 @@ button {
     outline: none;
   }
 
-  .search-form_label:focus {
+  .search-form__label:focus {
     outline: none;
   }
 
@@ -394,16 +394,16 @@ button {
     outline: none;
   }
 
-  .content_card-link:focus {
+  .content__card-link:focus {
     outline: none;
   }
 
-  .search-form_textfield:has(:focus-visible) {
+  .search-form__textfield:has(:focus-visible) {
     outline: 1px solid currentColor;
     outline-offset: 1px;
   }
 
-  .search-form_label:has(:focus-visible) {
+  .search-form__label:has(:focus-visible) {
     outline: 1px solid currentColor;
     outline-offset: 1px;
   }
@@ -413,11 +413,6 @@ button {
     outline-offset: 1px;
   }
 
-  .content_card-link:focus-visible {
+  .content__card-link:focus-visible {
     outline: 1px solid currentColor;
   }
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #D9D9D9;
-}
-
